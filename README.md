@@ -1,2 +1,2 @@
 # Project2
-Revature Group Project
+Travel Planner Application
