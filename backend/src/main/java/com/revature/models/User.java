@@ -1,4 +1,4 @@
-package com.revature.TravelPlanner.models;
+package com.revature.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;

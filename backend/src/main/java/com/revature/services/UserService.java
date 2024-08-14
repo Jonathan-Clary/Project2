@@ -1,6 +1,6 @@
-package com.revature.TravelPlanner.services;
+package com.revature.services;
 
-import com.revature.TravelPlanner.DAOs.UserDAO;
+import com.revature.DAOs.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

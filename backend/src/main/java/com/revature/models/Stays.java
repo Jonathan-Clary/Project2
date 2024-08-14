@@ -1,4 +1,4 @@
-package com.revature.TravelPlanner.models;
+package com.revature.models;
 
 
 
