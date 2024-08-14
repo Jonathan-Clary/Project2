@@ -11,9 +11,15 @@ public class Hotel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long hotelId;
 
+    @Column(nullable = false)
     private String hotelName;
 
+    @Column(nullable = false)
     private String address;
+
+    @JoinColumn(name = "userId")
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private Hotel hotel;
 
     // Constructors
     public Hotel() {
