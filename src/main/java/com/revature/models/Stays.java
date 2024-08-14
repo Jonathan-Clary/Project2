@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 
 @Entity
 @Table(name = "stays")
-@Component
 public class Stays {
 
     @Id
@@ -45,6 +44,8 @@ public class Stays {
     @Column(nullable = false)
     private String endDate;
 
+    public Stays() {}
+
     //TODO:Set up add hotel to constructor
     public Stays(String endDate, String bookedDate, User user, int stayId) {
         this.endDate = endDate;
@@ -52,6 +53,8 @@ public class Stays {
         this.user = user;
         this.stayId = stayId;
     }
+
+
     //TODO:Set up hotel getter and setter
     //TODO:Set up toString and equals/hash
 

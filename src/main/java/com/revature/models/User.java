@@ -1,13 +1,12 @@
 package com.revature.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 
+@Entity
+@Table(name = "users")
 public class User {
 
     @Id
@@ -27,6 +26,8 @@ public class User {
 
     @Column(nullable = false)
     private String dateCreated;
+
+    public User() {}
 
     public User(int userId, String firstName, String lastName, String password, String dateCreated) {
         this.userId = userId;

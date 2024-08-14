@@ -8,7 +8,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "saved")
-@Component
 public class Saved {
 
     @Id
@@ -18,12 +17,12 @@ public class Saved {
     @Column(nullable = false)
     private String date_added;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "saved", fetch = FetchType.EAGER, cascade = CascadeType.ALL) // TODO: this could be one to one will decide later
+    @JoinColumn(name = "userId")
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL) // TODO: this could be one to one will decide later
     private User user;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "saved", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "userId")
+    @ManyToOne( fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Hotel hotel;
 
     public Saved() {

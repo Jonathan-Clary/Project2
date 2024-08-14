@@ -2,11 +2,9 @@ package com.revature.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import org.springframework.stereotype.Component;
 
 @Entity
 @Table(name = "reviews")
-@Component
 public class Reviews {
 
     @Id
@@ -22,12 +20,12 @@ public class Reviews {
     @Column(nullable = false)
     private String review_text;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "reviews", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "userId")
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private User user;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "reviews", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "userId")
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Hotel hotel;
 
     public Reviews() {
