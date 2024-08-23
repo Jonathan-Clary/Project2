@@ -4,3 +4,6 @@
 [submodule "Project2_Back_End"]
 	path = Project2_Back_End
 	url = https://github.com/Jonathan-Clary/Project2_Back_End.git
+[submodule "TravelPlanner-AdminService"]
+	path = TravelPlanner-AdminService
+	url = https://github.com/asly-97/TravelPlanner-AdminService.git
