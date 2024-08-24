@@ -1,2 +1,8 @@
 [submodule "https://github.com/Jonathan-Clary/Project2_Back_End.git"]
 	branch = main
+[submodule "https://github.com/Jonathan-Clary/Project2Front-End.git"]
+	branch = main
+[submodule "https://github.com/asly-97/TravelPlanner-AdminService.git"]
+	branch = main
+[submodule "https://github.com/Jonathan-Clary/AdminFrontEnd.git"]
+	branch = main

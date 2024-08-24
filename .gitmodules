@@ -7,3 +7,6 @@
 [submodule "TravelPlanner-AdminService"]
 	path = TravelPlanner-AdminService
 	url = https://github.com/asly-97/TravelPlanner-AdminService.git
+[submodule "AdminFrontEnd"]
+	path = AdminFrontEnd
+	url = https://github.com/Jonathan-Clary/AdminFrontEnd.git
